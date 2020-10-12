@@ -1,10 +1,10 @@
-# Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look at https://github.com/robbyrussell/oh-my-zsh/wiki/themes for alternatives
+# You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="robbyrussell"
-RPS1='[$(ruby_prompt_info)]$EPS1'  # Add ruby version on prompt (float right)
+
+# Useful oh-my-zsh plugins for Le Wagon bootcamps
+plugins=(git gitfast bundler brew rbenv last-working-dir common-aliases sublime history-substring-search zsh-syntax-highlighting)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -12,10 +12,6 @@ export HOMEBREW_NO_ANALYTICS=1
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git gitfast bundler brew rbenv last-working-dir common-aliases sublime history-substring-search zsh-syntax-highlighting)
 
 # Load rbenv if installed (To manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
