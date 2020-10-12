@@ -11,7 +11,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(gitfast bundler brew rbenv last-working-dir common-aliases sublime history-substring-search zsh-syntax-highlighting)
+plugins=(git gitfast bundler brew rbenv last-working-dir common-aliases sublime history-substring-search zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 export PATH='/usr/local/bin:/usr/local/share:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/X11/bin:/usr/texbin:~/bin'
@@ -33,3 +33,7 @@ export LC_ALL=en_US.UTF-8
 
 # Bundle editor
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/tom/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
