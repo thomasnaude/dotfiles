@@ -43,3 +43,4 @@ export LC_ALL=en_US.UTF-8
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/tom/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
